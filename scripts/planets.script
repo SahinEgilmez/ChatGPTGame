@@ -9,9 +9,9 @@ local cameraFocusIndex = 1
 function init(self)
 	-- Load the planet images and store them in a table
 	self.planets = {
-		go.get("/planet_00", "sprite"),
-		go.get("/planet_01", "sprite"),
-		go.get("/planet_02", "sprite"),
+		go.get("planet_00", "sprite"),
+		go.get("planet_01", "sprite"),
+		go.get("planet_02","sprite"),
 		-- Add the rest of the planets here
 		
 	}

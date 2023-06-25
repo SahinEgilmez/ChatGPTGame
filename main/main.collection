@@ -19,66 +19,6 @@ instances {
     z: 1.0
   }
 }
-instances {
-  id: "planet_00"
-  prototype: "/main/planet_00.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "planet_01"
-  prototype: "/main/planet_01.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "planet_02"
-  prototype: "/main/planet_02.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
 scale_along_z: 0
 embedded_instances {
   id: "input"
@@ -134,6 +74,264 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "  property_decls {\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "planet_00"
+  data: "embedded_components {\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 100.0\\n"
+  "restitution: 0.0\\n"
+  "group: \\\"default\\\"\\n"
+  "mask: \\\"default\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_SPHERE\\n"
+  "    position {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 1\\n"
+  "  }\\n"
+  "  data: 512.0\\n"
+  "}\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: false\\n"
+  "bullet: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/main.atlas\\\"\\n"
+  "default_animation: \\\"00\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "planet_01"
+  data: "embedded_components {\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 100.0\\n"
+  "restitution: 0.0\\n"
+  "group: \\\"default\\\"\\n"
+  "mask: \\\"default\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_SPHERE\\n"
+  "    position {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 1\\n"
+  "  }\\n"
+  "  data: 512.0\\n"
+  "}\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: false\\n"
+  "bullet: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/main.atlas\\\"\\n"
+  "default_animation: \\\"01\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "planet_02"
+  data: "embedded_components {\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 100.0\\n"
+  "restitution: 0.0\\n"
+  "group: \\\"default\\\"\\n"
+  "mask: \\\"default\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_SPHERE\\n"
+  "    position {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 1\\n"
+  "  }\\n"
+  "  data: 512.0\\n"
+  "}\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: false\\n"
+  "bullet: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/main.atlas\\\"\\n"
+  "default_animation: \\\"02\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
   "  }\n"
   "}\n"
   ""
