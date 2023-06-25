@@ -1,0 +1,38 @@
+-- planets.script
+
+-- Define the vertical space between planets
+local planetSpacing = 200
+
+-- Initialize the camera focus index
+local cameraFocusIndex = 1
+
+function init(self)
+	-- Load the planet images and store them in a table
+	self.planets = {
+		go.get("/planet_00", "sprite"),
+		go.get("/planet_01", "sprite"),
+		go.get("/planet_02", "sprite"),
+		-- Add the rest of the planets here
+		
+	}
+
+	-- Set the initial positions of the planets
+	for i, planet in ipairs(self.planets) do
+		go.set_position(vmath.vector3(0, i * -planetSpacing, 0), planet)
+	end
+
+	-- Set the camera's initial position and focus on the first planet
+	go.set_position(vmath.vector3(0, 0, 0), "#camera")
+	go.set("#camera", "target", self.planets[1])
+end
+
+function on_input(self, action_id, action)
+	-- Detect a click or touch event to focus on the next planet
+	if action_id == hash("click") and action.pressed then
+		cameraFocusIndex = cameraFocusIndex + 1
+		if cameraFocusIndex > #self.planets then
+			cameraFocusIndex = 1
+		end
+		go.set("#camera", "target", self.planets[cameraFocusIndex])
+	end
+end

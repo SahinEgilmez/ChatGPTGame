@@ -1,10 +1,90 @@
 name: "main"
+instances {
+  id: "Camera"
+  prototype: "/main/Camera.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "planet_00"
+  prototype: "/main/planet_00.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "planet_01"
+  prototype: "/main/planet_01.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "planet_02"
+  prototype: "/main/planet_02.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
-  id: "go"
+  id: "input"
   data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/main/main.script\"\n"
+  "  id: \"input\"\n"
+  "  component: \"/scripts/input.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -19,14 +99,29 @@ embedded_instances {
   "  property_decls {\n"
   "  }\n"
   "}\n"
-  "embedded_components {\n"
-  "  id: \"logo\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/main.atlas\\\"\\n"
-  "default_animation: \\\"icon_180\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "planets"
+  data: "components {\n"
+  "  id: \"planets\"\n"
+  "  component: \"/scripts/planets.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -38,11 +133,13 @@ embedded_instances {
   "    z: 0.0\n"
   "    w: 1.0\n"
   "  }\n"
+  "  property_decls {\n"
+  "  }\n"
   "}\n"
   ""
   position {
-    x: 320.0
-    y: 568.0
+    x: 0.0
+    y: 0.0
     z: 0.0
   }
   rotation {
